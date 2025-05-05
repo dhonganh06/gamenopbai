@@ -1,0 +1,67 @@
+# depslib dependency file v1.0
+1746459228 source:c:\users\hong anh\downloads\gamenopbai\audiomanager.cpp
+	"AudioManager.h"
+
+1746459228 c:\users\hong anh\downloads\gamenopbai\audiomanager.h
+	<SDL.h>
+	<SDL_mixer.h>
+	<iostream>
+	<string>
+
+1746459228 source:c:\users\hong anh\downloads\gamenopbai\bird.cpp
+	"Bird.h"
+
+1746459228 c:\users\hong anh\downloads\gamenopbai\bird.h
+	<SDL.h>
+	<vector>
+	"Wall.h"
+
+1746459228 c:\users\hong anh\downloads\gamenopbai\wall.h
+	<SDL.h>
+	<SDL_image.h>
+
+1746459228 source:c:\users\hong anh\downloads\gamenopbai\game.cpp
+	"Game.h"
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1746459228 c:\users\hong anh\downloads\gamenopbai\game.h
+	<SDL.h>
+	<SDL_image.h>
+	<vector>
+	"Bird.h"
+	"Rabbit.h"
+	"Cat.h"
+	"Wall.h"
+	"AudioManager.h"
+	"TextRenderer.h"
+
+1746459228 c:\users\hong anh\downloads\gamenopbai\rabbit.h
+	<SDL.h>
+
+1746459498 c:\users\hong anh\downloads\gamenopbai\cat.h
+	<SDL.h>
+	<vector>
+	"Wall.h"
+
+1746459228 c:\users\hong anh\downloads\gamenopbai\textrenderer.h
+	<SDL.h>
+	<SDL_ttf.h>
+	<string>
+
+1746459228 source:c:\users\hong anh\downloads\gamenopbai\main.cpp
+	"Game.h"
+
+1746459228 source:c:\users\hong anh\downloads\gamenopbai\rabbit.cpp
+	"Rabbit.h"
+	<cstdlib>
+
+1746459228 source:c:\users\hong anh\downloads\gamenopbai\textrenderer.cpp
+	"TextRenderer.h"
+	<iostream>
+	<SDL_image.h>
+
+1746459228 source:c:\users\hong anh\downloads\gamenopbai\wall.cpp
+	"Wall.h"
+
