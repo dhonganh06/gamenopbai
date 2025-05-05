@@ -13,8 +13,8 @@ Cat::Cat(SDL_Texture* tex, int x, int y, int screenWidth, int screenHeight)
       screenHeight(screenHeight),
       facingRight(true),
       jumping(false),
-      gravity(0.3f),        // Giảm gravity để nhảy cao hơn
-      jumpStrength(-12.0f), // Tăng jumpStrength để nhảy cao hơn
+      gravity(0.3f),
+      jumpStrength(-12.0f),
       lastFrameTime(SDL_GetTicks())
 {
     int texW, texH;
@@ -66,26 +66,23 @@ void Cat::handleEvent(const SDL_Event& e) {
 }
 
 void Cat::update() {
-    // Gravity
     if (jumping) velocityY += gravity;
 
     posX += velocityX;
     posY += velocityY;
 
-    // Giới hạn màn hình
     if (posX < 0) posX = 0;
     if (posX + destRect.w > screenWidth) posX = screenWidth - destRect.w;
 
     if (posY + destRect.h >= screenHeight) {
         posY = screenHeight - destRect.h;
         velocityY = 0.0f;
-        jumping = false; // Chạm đất -> cho phép nhảy tiếp
+        jumping = false;
     } else if (posY < 0) {
         posY = 0;
         velocityY = 0.0f;
     }
 
-    // Animation
     Uint32 currentTicks = SDL_GetTicks();
     if (currentTicks - lastFrameTime >= animationSpeed) {
         frame = (frame + 1) % totalFrames;
